@@ -19,5 +19,5 @@ I'm employed full-time by Microsoft working on Azure PlayFab and am not looking 
 ## Contact
 
 - [jordan@notclickable.com](mailto:jordan@notclickable.com)
-- [Twitter](https://twitter.com/jordanroher)
+- [Mastodon](https://notclickable.social/@jordan)
 - [Facebook](https://facebook.com/jordanroher)
