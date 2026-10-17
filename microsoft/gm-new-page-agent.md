@@ -15,7 +15,7 @@ These videos you're seeing are one-shot passes from the agent.
 - **Pages needed:**
 - **Sample customer benefit:**
 
-[![](./media/economy-health-inspector.png)](./media/economy-health-inspector.mp4)
+<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/economy-health-inspector.mp4" title="./media/economy-health-inspector."></video>
 
 ## Outage compensation
 
