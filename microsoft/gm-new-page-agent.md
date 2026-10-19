@@ -1,14 +1,18 @@
 # Game Manager AI New Page Agent
 
-Hi everyone! Do you know how to write services in C# but don't feel excited about making the UI in React?
+Good morning everyone!
+
+Do you know how to write services in C# but don't feel excited about making the UI in React?
 
 ![Good news, everyone!](./media/goodnews.jpg)
 
-There's an AI agent for that. It's called **GM New Page** agent and it scaffolds and builds Game Manager pages for you.
+There's an AI agent for that. It's called the **GM New Page** agent. 
+
+It scaffolds Game Manager pages for you.
 
 # Preview
 
-I came up with two scenarios for the New Page Agent to work on. I think these are great feature ideas. Luckily David Sayed sits only fifty feet from me.
+I came up with two scenarios for the New Page Agent to work on. I think these are great feature ideas. Luckily David Sayed sits exactly one hundred feet from me.
 
 These videos you're seeing are one-shot passes from the agent.
 
@@ -80,11 +84,11 @@ You can describe the pages you need however you like. But you can also have your
 
 > Write a prompt to be used by the "GM New Page" agent to build a UI to act as the outage compensation planner. It should be able to exercise all the APIs you created. Write it tailored to the agent as though you were a backend software developer who wrote the service and needs to make a nice UI for the user to interact with and manage it.
 
-As you need to fix things, I recommend using a new session and whatever model and reasoning level you like.
+As you need to fix things, I recommend using a **new session** and whatever model and reasoning level you like.
 
 ## Get interviewed
 
-Make sure to pay attention at the part where it asks if support staff should have the read permission. They should have it!
+Make sure to pay attention at the part where it asks if support staff should have the read permission. They should have access!
 
 <blockquote>
 <dl>
