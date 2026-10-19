@@ -78,9 +78,7 @@ This agent should build the first couple pages.
 
 You can describe the pages you need however you like. But you can also have your AI look at your backend code and generate UI prompts from that, e.g.
 
-```
-Write a prompt to be used by the "GM New Page" agent to build a UI to act as the outage compensation planner. It should be able to exercise all the APIs you created. Write it tailored to the agent as though you were a backend software developer who wrote the service and needs to make a nice UI for the user to interact with and manage it.
-```
+> Write a prompt to be used by the "GM New Page" agent to build a UI to act as the outage compensation planner. It should be able to exercise all the APIs you created. Write it tailored to the agent as though you were a backend software developer who wrote the service and needs to make a nice UI for the user to interact with and manage it.
 
 As you need to fix things, I recommend using a new session and whatever model and reasoning level you like.
 
@@ -89,52 +87,52 @@ As you need to fix things, I recommend using a new session and whatever model an
 Make sure to pay attention at the part where it asks if support staff should have the read permission. They should have it!
 
 <blockquote>
-    <dl>
-    <dt><strong>AGENT:</strong> How should the feature be split into pages?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) A landing page for the inspector, a details page for sources and one for anomalies, separate create/edit pages for sources and anomalies, and a dialog for creating and editing currencies.</dd>
+<dl>
+<dt><strong>AGENT:</strong> How should the feature be split into pages?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) A landing page for the inspector, a details page for sources and one for anomalies, separate create/edit pages for sources and anomalies, and a dialog for creating and editing currencies.</dd>
 
-    <dt><strong>AGENT:</strong> I'll add new permissions for this. Should there be a separate read and write permission?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Yes, a new pair: Economy_HealthInspector_Read and Economy_HealthInspector_Write.</dd>
+<dt><strong>AGENT:</strong> I'll add new permissions for this. Should there be a separate read and write permission?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Yes, a new pair: Economy_HealthInspector_Read and Economy_HealthInspector_Write.</dd>
 
-    <dt><strong>AGENT:</strong> Should PlayFab's internal support roles get access?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Add Read to the read-only support role only.</dd>
+<dt><strong>AGENT:</strong> Should PlayFab's internal support roles get access?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Add Read to the read-only support role only.</dd>
 
-    <dt><strong>AGENT:</strong> Does this ship on for everyone, or behind a title flight first?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Behind a new title flight, EconomyHealthInspector, checked on the page and in every controller action.</dd>
+<dt><strong>AGENT:</strong> Does this ship on for everyone, or behind a title flight first?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Behind a new title flight, EconomyHealthInspector, checked on the page and in every controller action.</dd>
 
-    <dt><strong>AGENT:</strong> What should the URLs look like?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) economy/health?currency=GO for the landing page, with sources/{id}/view and /edit for sources, and the same shape for anomalies.</dd>
+<dt><strong>AGENT:</strong> What should the URLs look like?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) economy/health?currency=GO for the landing page, with sources/{id}/view and /edit for sources, and the same shape for anomalies.</dd>
 
-    <dt><strong>AGENT:</strong> How should the page appear in navigation?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) A visible left-nav item, with hidden child entries so the breadcrumbs work.</dd>
+<dt><strong>AGENT:</strong> How should the page appear in navigation?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) A visible left-nav item, with hidden child entries so the breadcrumbs work.</dd>
 
-    <dt><strong>AGENT:</strong> How does a user get from a table row to more detail, and where do actions live?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Single-select tables; the name links to the details page, and a command bar holds New, Edit, and Delete.</dd>
+<dt><strong>AGENT:</strong> How does a user get from a table row to more detail, and where do actions live?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Single-select tables; the name links to the details page, and a command bar holds New, Edit, and Delete.</dd>
 
-    <dt><strong>AGENT:</strong> Should the tables be sortable or searchable?</dt>
-    <dd><strong>HUMAN:</strong> Yes, sortable columns plus a local search box. (You chose this instead of my "no sorting" default.)</dd>
+<dt><strong>AGENT:</strong> Should the tables be sortable or searchable?</dt>
+<dd><strong>HUMAN:</strong> Yes, sortable columns plus a local search box. (You chose this instead of my "no sorting" default.)</dd>
 
-    <dt><strong>AGENT:</strong> What happens if the user leaves a form with unsaved changes?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Use Game Manager's existing "discard changes?" prompt.</dd>
+<dt><strong>AGENT:</strong> What happens if the user leaves a form with unsaved changes?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Use Game Manager's existing "discard changes?" prompt.</dd>
 
-    <dt><strong>AGENT:</strong> What happens after a successful save, cancel, or delete?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) Save goes to the record's details page with a success banner; Cancel returns to where the user came from; Delete returns to the landing page on the same currency with a "deleted" banner.</dd>
+<dt><strong>AGENT:</strong> What happens after a successful save, cancel, or delete?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) Save goes to the record's details page with a success banner; Cancel returns to where the user came from; Delete returns to the landing page on the same currency with a "deleted" banner.</dd>
 
-    <dt><strong>AGENT:</strong> Should this page be added to the end-to-end smoke test list?</dt>
-    <dd><strong>HUMAN:</strong> (Accepted recommended) No, leave the list alone.</dd>
+<dt><strong>AGENT:</strong> Should this page be added to the end-to-end smoke test list?</dt>
+<dd><strong>HUMAN:</strong> (Accepted recommended) No, leave the list alone.</dd>
 
-    <dt><strong>AGENT:</strong> Which stamp should I use for the browser check?</dt>
-    <dd><strong>HUMAN:</strong> plr.</dd>
+<dt><strong>AGENT:</strong> Which stamp should I use for the browser check?</dt>
+<dd><strong>HUMAN:</strong> plr.</dd>
 
-    <dt><strong>HUMAN:</strong> Is this Economy v2 or legacy economy?</dt>
-    <dd><strong>AGENT:</strong> v2. The backend is tagged as an Economy v2 API, and its mock currencies don't depend on either economy system's real currencies. I also noted that my earlier navigation placement, next to "Currency", was the legacy v1 Currency entry.</dd>
+<dt><strong>HUMAN:</strong> Is this Economy v2 or legacy economy?</dt>
+<dd><strong>AGENT:</strong> v2. The backend is tagged as an Economy v2 API, and its mock currencies don't depend on either economy system's real currencies. I also noted that my earlier navigation placement, next to "Currency", was the legacy v1 Currency entry.</dd>
 
-    <dt><strong>AGENT:</strong> Where should the navigation entry go, given that?</dt>
-    <dd><strong>HUMAN:</strong> Keep it as its own top-level left-nav item, not in either group, right after the Economy v2 Catalog entry.</dd>
+<dt><strong>AGENT:</strong> Where should the navigation entry go, given that?</dt>
+<dd><strong>HUMAN:</strong> Keep it as its own top-level left-nav item, not in either group, right after the Economy v2 Catalog entry.</dd>
 
-    <dt><strong>AGENT:</strong> (Plan summary) Does this plan look right?</dt>
-    <dd><strong>HUMAN:</strong> "Looks good, build it"</dd>
-    </dl>
+<dt><strong>AGENT:</strong> (Plan summary) Does this plan look right?</dt>
+<dd><strong>HUMAN:</strong> "Looks good, build it"</dd>
+</dl>
 </blockquote>
 
 ## Wait for it to build the pages
