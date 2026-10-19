@@ -1,6 +1,10 @@
 # Game Manager AI New Page Agent
 
-Hi everyone! Do you know how to write services in C# but don't feel excited about making the UI in React? Well good news! There's an AI agent for that.
+Hi everyone! Do you know how to write services in C# but don't feel excited about making the UI in React?
+
+![Good news, everyone!](./media/goodnews.jpg)
+
+There's an AI agent for that. It's called **GM New Page** agent and it scaffolds and builds Game Manager pages for you.
 
 # Preview
 
@@ -17,7 +21,7 @@ These videos you're seeing are one-shot passes from the agent.
 - [React UI code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/8ad8f879963bae65bd22557ead6b84cd1117e331?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-economy-v2-health)
 - [Watch demo video](./media/economy-health-inspector.mp4)
 
-<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/economy-health-inspector.mp4" title="economy-health-inspector"></video>
+![Economy health status screenshot](./media/preview-economy.jpg)
 
 ## Outage compensation
 
@@ -28,7 +32,7 @@ These videos you're seeing are one-shot passes from the agent.
 - [React UI code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/725c4bbe130875134f9a399bc4e982f0ec72caad?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-outage-compensation)
 - [Watch demo video](./media/outage-compensation.mp4)
 
-<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/outage-compensation.mp4" title="outage-compensation"></video>
+![Outage compensation status screenshot](./media/preview-outage.jpg)
 
 # How it works
 
