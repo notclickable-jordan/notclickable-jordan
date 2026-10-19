@@ -145,8 +145,6 @@ It takes about an hour.
 
 This agent is designed to scaffold pages for you. It's not good at designing them well, though the jump from Opus 5 to 5.5 improved things significantly. The complexity of the pages seems to determine how strictly the agent follows our coding guidelines. Three pages is about the right number for it to produce code that sails through code review. My samples above had about a dozen pages. And while they worked, they went off the rails in terms of our coding guidelines.
 
-## Ship-it agent
-
-One more thing&hellip;
+## One more thing&hellip;
 
 The **GM Ship It** agent is also in `main` branch. Switch to it and ask "review my Game Manager change." Similar to our **xreview** skill, it will perform an intensive evaluation of your code and repair the issues that a wayward **GM New Page** agent may have introduced.
