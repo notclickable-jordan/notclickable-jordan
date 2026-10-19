@@ -15,8 +15,9 @@ These videos you're seeing are one-shot passes from the agent.
 - **Sample customer benefit:** Discover a daily reward is granting **10× the intended currency** and identify the affected population.
 - [C# service code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/69c17e56ff8821778c4d7783af9c7cb7ef567b62?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-economy-v2-health)
 - [React UI code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/8ad8f879963bae65bd22557ead6b84cd1117e331?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-economy-v2-health)
+- [Watch demo video](./media/economy-health-inspector.mp4)
 
-<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/economy-health-inspector.mp4" title="economy-health-inspector"><a href="./media/economy-health-inspector.mp4">Watch demo video</a></video>
+<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/economy-health-inspector.mp4" title="economy-health-inspector"></video>
 
 ## Outage compensation
 
@@ -25,8 +26,9 @@ These videos you're seeing are one-shot passes from the agent.
 - **Sample customer benefit:** “Who lost a ranked match during the outage?” → **Preview compensation for 1,284 players**, with duplicate recipients excluded.
 - [C# service code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/5f92f8d5bc2c67467c13b3bf7d6163da81d37d64?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-outage-compensation)
 - [React UI code](https://microsoft.visualstudio.com/PlayFab/_git/pf-main/commit/725c4bbe130875134f9a399bc4e982f0ec72caad?refName=refs%2Fheads%2Fjoroher%2Fgm-ai-outage-compensation)
+- [Watch demo video](./media/outage-compensation.mp4)
 
-<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/outage-compensation.mp4" title="outage-compensation"><a href="./media/outage-compensation.mp4">Watch demo video</a></video>
+<video controls src="https://github.com/notclickable-jordan/notclickable-jordan/raw/refs/heads/main/microsoft/media/outage-compensation.mp4" title="outage-compensation"></video>
 
 # How it works
 
